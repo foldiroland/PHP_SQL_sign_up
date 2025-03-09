@@ -11,12 +11,10 @@
         <div class="content_L">
             <form action="feldolgoz_R.php" method="POST">
             <h1>Bejelentkezés</h1>    
-            <label>Név: </label><br>
-            <input type="text" name="name" required><br><br>
-            <label>Jelszó: </label><br>
-            <input type="password" name="password" required><br><br>
-            <button type="submit">Bejelentkezés</button>
-            <p><a href="register.php">Még nincs fiókod? Regisztrálj!</a></p>
+            <input id="input_1" type="text" name="name" required placeholder="  Ird be a neved"><br><br>
+            <input id="input_2" type="password" name="password" required placeholder="  Ird be a jelszavad"> <br><br>
+            <button class="button" type="submit">Bejelentkezés</button>
+            <p><a href="register.php">Még nincs fiókod? <b id="white">Regisztrálj!</b></a></p>
             </form>
         </div>
     </section>

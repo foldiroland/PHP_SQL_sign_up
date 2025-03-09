@@ -1,30 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Shrikhand&display=swap');
 body{
     margin: 0;
-    background-color: rgb(32, 32, 32);
+    background:url(bg4.jpg);
+
     color: #ffff;
+    background-size: cover;
+    background-position: center;
+    height: 100dvh;
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings:
+      "SOFT" 0,
+      "WONK" 0;
 }
 
 section{
     display: grid;
     place-content: center;
     place-items: center;
-    min-height: 100vh;
+    min-height: 90dvh;
     padding: 20px;
 }
 .content{
-    background-color: rgb(90, 90, 90);
+    background: rgba( 0, 0, 0, 0.45 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     padding: 20px;
     text-align: center;
-    height: 550px;
+    height: 520px;
     width: 300px;
     font-size: 30px;
     padding: 30px;
     border-radius: 15px;
-    border-left: 5px rgb(134, 182, 255) solid;
-    border-top: 3px rgb(134, 182, 255) solid;
 }
 .content_L{
-    background-color: rgb(90, 90, 90);
+    background: rgba( 0, 0, 0, 0.45 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     padding: 20px;
     text-align: center;
     height: 450px;
@@ -32,29 +53,92 @@ section{
     font-size: 30px;
     padding: 30px;
     border-radius: 15px;
-    border-left: 5px rgb(134, 182, 255) solid;
-    border-top: 3px rgb(134, 182, 255) solid;
 }
 input{
     border: 0px;
-    border-radius: 10px;
-    height: 25px;
+    border-bottom: 2px white solid;
+    background: transparent;
+    border-radius: 0px;
+    height: 30px;
     width: 250px;
+    padding: 5px;
+    text-align: center;
+    color: #fff;
 }
+input::placeholder{
+    color: #bdbdbd;
+}
+input::after{
+    border: 0px;
+    border-bottom: 2px white solid;
+    background: transparent;
+    border-radius: 0px;
+    height: 30px;
+    width: 250px;
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+}
+input:active{
+    border: none;
+}
+#input_1{
+    background-image: url('name.svg');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    background-size: 30px;
+    padding-left: 10px;
+}
+#input_2{
+    background-image: url('password.svg');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    background-size: 30px;
+    padding-left: 10px;
+}
+#input_3{
+    background-image: url('email.svg');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    background-size: 30px;
+    padding-left: 10px;
+}
+
 h1{
-    text-decoration: underline rgb(134, 182, 255);
+    text-decoration: none rgb(255, 255, 255);
 }
 button{
     height: 50px;
-    width: 180px;
-    background-color: rgb(134, 182, 255);
-    border: 0px ;
-    border-radius: 10px;
-    color: #ffff;
+    width: 250px;
+    background-color: transparent;
+    border: 2px white solid;
+    border-radius: 3px;
+    color: #dedede;
     font-size: 24px;
     font-weight: 600;
 }
+button:hover{
+    animation: pulse infinite 1s;
+}
 a{
-    color: rgb(134, 182, 255);
+    color: #b0b0b0;
     font-size: 19px;
+}
+#white{
+    color: #cfcfcf;
+}
+
+
+@keyframes pulse {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.05);
+        backdrop-filter: blur( 0.5px );
+        -webkit-backdrop-filter: blur( 3.5px );
+    }
+    100%{
+        transform: scale(1);
+    }
 }
